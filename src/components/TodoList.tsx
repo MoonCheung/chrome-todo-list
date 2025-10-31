@@ -16,7 +16,7 @@ export default function TodoList(props){
                     <CircleCheck className="size-6 text-[#028575]" onClick={() => props.completeTodo(todo)}  />
                   }
                   <span className={clsxm([
-                    'flex-1 px-2 py-[0rem]',
+                    'flex-1 px-2 py-[0rem] text-[#999999b3] dark:text-[#ffffffde]',
                     todo.completed ? 'line-through opacity-40' : ''
                   ])}>
                     {todo.description}
@@ -28,7 +28,7 @@ export default function TodoList(props){
             }
           </ul>
         ) : (
-          <div className="text-[0.7rem] text-center p-[0.3rem] ml-[0.9rem] mr-[0.9rem] my-20 w-4/5 rounded-[5px] text-[#999999b3] dark:text-[white]">
+          <div className="text-[0.7rem] text-center p-[0.3rem] ml-[0.9rem] mr-[0.9rem] my-20 w-4/5 rounded-[5px] text-[#999999b3] dark:text-[#ffffffde]">
             To create a to-Do list, please enter your first task in the field above and click "ADD" button. 
           </div>
         )

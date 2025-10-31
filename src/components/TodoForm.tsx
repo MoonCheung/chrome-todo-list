@@ -46,12 +46,12 @@ export default function TodoForm(props){
       { error && (<div className='baseAlerts'> { error } </div>) }
       { success && (<div className={clsxm([
           'baseAlerts',
-          'text-[#999999b3] dark:text-[#fff] bg-[#028575]'
+          'text-[#999999b3] dark:text-[#ffffffde] bg-[#028575]'
       ])}> { success } </div>) }
       <div className="mx-[0rem] my-4 px-4 py-[0rem] w-full flex justify-between">
         <input type="text" placeholder="Enter new task" autoFocus {...register('description', {required: true})} className={clsxm([
           'baseTodos',
-          'w-[70%] placeholder:text-[#028575]'
+          'w-[70%] placeholder:text-[#028575] border-solid border-1 border-[#028575] rounded-[4px]'
         ])} />
         <button type="submit" className={clsxm([
           'baseTodos',
@@ -63,7 +63,7 @@ export default function TodoForm(props){
       </div>
       <div className="relative overflow-hidden w-full pl-4 pr-4 py-[0rem] flex justify-center border-b-[2px_solid_#028575]">
         <select name="todos" className={clsxm([
-            'appearance-none text-[#028575] dark:text-[#fff] w-full cursor-pointer px-2 py-[0.4rem] text-[1rem] bg-[#999999b3] rounded-[5px] leading-[1.2]',
+            'appearance-none text-[#028575] dark:text-[#ffffffde] w-full cursor-pointer px-2 py-[0.4rem] text-[1rem] bg-[#999999b3] rounded-[5px] leading-[1.2]',
             'hover:after:bg-[#666] hover:after:text-[#fff]'
           ])} onChange={handlerStatus}>
           <option value="all">All</option>

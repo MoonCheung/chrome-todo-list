@@ -101,9 +101,12 @@ export default function App() {
     }));
   }
 
+  // NOTE: get image url
+  // chrome.runtime.getURL('./src/assets/img/cold-night.jpg')
+  
   return (
     <main className="flex flex-col justify-center items-center mx-[auto] my-[0] text-center min-w-[450px]">
-      <div className="flex flex-col justify-end items-start pl-6 w-full min-h-[25vh] px-8">
+      <div className="flex flex-col justify-end items-start pl-6 w-full min-h-[25vh] px-8 bg-[url('chrome-extension://gndblimomfhnimekccnbdldonifilojb/src/assets/img/cold-night.jpg')] bg-cover bg-no-repeat bg-bottom">
         <h2>My Day</h2>
         <p className="text-[1rem] mt-2 pb-6">{date}</p>
       </div>
@@ -121,7 +124,7 @@ export default function App() {
         completeTodo={completeTodo}
         editTodo={editTodo}
       />
-      <footer className="pb-4">
+      <footer className="py-4">
         <p>&copy; 2025 MoonCheung Author &bull; <a href="https://github.com/MoonCheung" target="_blank" rel="noreferrer">Portfolio</a></p>
       </footer>
     </main>

@@ -27,7 +27,7 @@ export default defineManifest({
   },
   web_accessible_resources: [
     {
-      resources: ['src/assets/img/*'],
+      resources: ['*.jpg','*.png','*.jpeg','*.gif'],
       matches: ['<all_urls>']
     }
   ]
