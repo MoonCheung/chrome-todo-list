@@ -24,10 +24,8 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  min-height: -webkit-fill-available;
+  background-color: rebeccapurple;
 }
 
 .logo {
@@ -83,6 +81,6 @@ body {
   }
 
   .baseTodos {
-    @apply px-2 py-[0.4rem] text-[1rem] border-[none] bg-[#fff] outline-[none];
+    @apply px-2 py-[0.4rem] text-[1rem] border-[none] outline-[none];
   }
 }

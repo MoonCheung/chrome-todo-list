@@ -100,11 +100,10 @@ export default function App() {
       return item;
     }));
   }
-  
 
   return (
-    <main className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-end items-start pl-6 bg-[linear-gradient(rgba(0,_0,_0,_0.0),_rgba(0,_0,_0,_0.5)),_url(../images/cold-night.jpg)_no-repeat_right_bottom] bg-cover w-full min-h-[25vh] rounded-tl-[8px] rounded-br-[0] rounded-tr-[8px] rounded-bl-[0]">
+    <main className="flex flex-col justify-center items-center mx-[auto] my-[0] text-center min-w-[450px]">
+      <div className="flex flex-col justify-end items-start pl-6 w-full min-h-[25vh] px-8">
         <h2>My Day</h2>
         <p className="text-[1rem] mt-2 pb-6">{date}</p>
       </div>
@@ -122,7 +121,7 @@ export default function App() {
         completeTodo={completeTodo}
         editTodo={editTodo}
       />
-      <footer>
+      <footer className="pb-4">
         <p>&copy; 2025 MoonCheung Author &bull; <a href="https://github.com/MoonCheung" target="_blank" rel="noreferrer">Portfolio</a></p>
       </footer>
     </main>

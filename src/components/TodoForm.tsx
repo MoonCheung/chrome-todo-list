@@ -42,16 +42,16 @@ export default function TodoForm(props){
   }
 
   return (
-    <form className="flex flex-col justify-center items-center w-full" onSubmit={handleSubmit(handleSubmits)}>
+    <form className="flex flex-col justify-center items-center w-full px-4" onSubmit={handleSubmit(handleSubmits)}>
       { error && (<div className='baseAlerts'> { error } </div>) }
       { success && (<div className={clsxm([
           'baseAlerts',
-          'text-[rgb(34,_114,_2)] bg-[rgba(3,_209,_54,_0.3)]'
+          'text-[#999999b3] dark:text-[#fff] bg-[#028575]'
       ])}> { success } </div>) }
       <div className="mx-[0rem] my-4 px-4 py-[0rem] w-full flex justify-between">
         <input type="text" placeholder="Enter new task" autoFocus {...register('description', {required: true})} className={clsxm([
           'baseTodos',
-          'w-[70%] border-b-[1px_solid_rgba(153,_153,_153,_0.3)] placeholder:text-[#028575]'
+          'w-[70%] placeholder:text-[#028575]'
         ])} />
         <button type="submit" className={clsxm([
           'baseTodos',
@@ -63,8 +63,7 @@ export default function TodoForm(props){
       </div>
       <div className="relative overflow-hidden w-full pl-4 pr-4 py-[0rem] flex justify-center border-b-[2px_solid_#028575]">
         <select name="todos" className={clsxm([
-            'appearance-none outline-[none] border-[none] text-[rgba(2,_133,_117,_0.6)] w-full cursor-pointer px-2 py-[0.4rem] text-[1rem] bg-[rgba(153,_153,_153,_0.3)] rounded-[5px] leading-[1.2]',
-            'after:absolute after:top-[0] after:right-[0] after:px-2 after:py-[0.4rem] after:bg-[#028575] after:ml-[0rem] after:mr-4 after:my-[0rem] after:pointer-events-none after:[transition:all_0.3s_ease] after:rounded-tl-[0] after:rounded-br-[5px] after:rounded-tr-[5px] after:rounded-bl-[0] after:leading-[1.2] after:max-h-[32px]',
+            'appearance-none text-[#028575] dark:text-[#fff] w-full cursor-pointer px-2 py-[0.4rem] text-[1rem] bg-[#999999b3] rounded-[5px] leading-[1.2]',
             'hover:after:bg-[#666] hover:after:text-[#fff]'
           ])} onChange={handlerStatus}>
           <option value="all">All</option>
