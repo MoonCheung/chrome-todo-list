@@ -1,14 +1,11 @@
-# React + Vite + CRXJS
+# Todo List App with React-Hooks.
 
-This template helps you quickly start developing Chrome extensions with React, TypeScript and Vite. It includes the CRXJS Vite plugin for seamless Chrome extension development.
+This project is a simple application to list a series of tasks to perform. You can create, read, edit, update and delete.
+It is based on forms handling exercises such as CRUD exercises. 
 
-## Features
+## Todo List App with React-Hooks.
 
-- React with TypeScript
-- TypeScript support
-- Vite build tool
-- CRXJS Vite plugin integration
-- Chrome extension manifest configuration
+The easiest way to create an `npx create-crxjs` this, is by creating a Typescript React template.
 
 ## Quick Start
 
@@ -32,21 +29,8 @@ npm run dev
 npm run build
 ```
 
-## Project Structure
-
-- `src/popup/` - Extension popup UI
-- `src/content/` - Content scripts
-- `manifest.config.ts` - Chrome extension manifest configuration
-
-## Documentation
-
-- [React Documentation](https://reactjs.org/)
-- [Vite Documentation](https://vitejs.dev/)
-- [CRXJS Documentation](https://crxjs.dev/vite-plugin)
-
 ## Chrome Extension Development Notes
 
 - Use `manifest.config.ts` to configure your extension
 - The CRXJS plugin automatically handles manifest generation
-- Content scripts should be placed in `src/content/`
 - Popup UI should be placed in `src/popup/`
