@@ -15,16 +15,9 @@ export default defineManifest({
     default_popup: 'src/popup/index.html',
   },
   permissions: [
-    'sidePanel',
-    'contentSettings',
+    // 'sidePanel',
+    // 'contentSettings',
   ],
-  content_scripts: [{
-    js: ['src/content/main.tsx'],
-    matches: ['https://*/*'],
-  }],
-  side_panel: {
-    default_path: 'src/sidepanel/index.html',
-  },
   web_accessible_resources: [
     {
       resources: ['*.jpg','*.png','*.jpeg','*.gif'],
